@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>10.50.30.4/RGM Exams/Student Results</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#dfe3e8;
+    margin:0;
+}
+
+.wrapper{
+    width:360px;
+    margin:120px auto;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.2);
+}
+
+.header{
+    padding:20px;
+    border-bottom:1px solid #eee;
+    text-align:center;
+}
+
+.content{
+    padding:25px;
+    text-align:center;
+}
+
+.content p{
+    color:#555;
+    font-size:14px;
+}
+
+.input-box{
+    margin-top:15px;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    font-size:15px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:18px;
+    background:#1e73d8;
+    color:white;
+    border:none;
+    border-radius:4px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#155bb5;
+}
+
+.link{
+    color:blue;
+    font-size:18px;
+    cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="header">
+<h1><b>RGM</b>Exams</h1>
+</div>
+
+<div class="content">
+
+<p>Username & Password as your Regd. No.<br>
+(Capital Letters only)</p>
+
+<div class="input-box">
+<input type="text" id="regno" placeholder="Regd. No.">
+</div>
+
+<div class="input-box">
+<input type="password" id="pass" placeholder="Password">
+</div>
+
+<button onclick="login()">Login</button>
+
+</div>
+
+</div>
+
+<script>
+
+function login(){
+
+var reg=document.getElementById("regno").value;
+var pass=document.getElementById("pass").value;
+
+if(reg=="" || pass==""){
+alert("Enter Regd. No. and Password");
+}
+else{
+
+document.body.innerHTML =
+"<div style='text-align:center;margin-top:200px;font-family:Arial;'>"+
+"<h4>For 1<sup>st</sup> year I SEM Results<br></br>click the below link</h4>"+
+"<br>"+
+"<span class='link' onclick='showResult()'>https://1:1rgmstudentresults.com</span>"+
+"</div>";
+
+}
+
+}
+
+function showResult(){
+
+document.body.innerHTML =
+"<div style='text-align:center;margin-top:200px;font-family:Arial;'>"+
+"<h2>Failed<br></br>Do hard work!</h2>"+
+"<br>"+
+"<p>To see your results click the below link</p>"+
+"<br>"+
+"<span class='link' onclick='finalResult()'>https:1:1//directresults.com</span>"+
+"</div>";
+
+}
+
+function finalResult(){
+
+document.body.innerHTML =
+
+"<style>"+
+"@keyframes zoomEffect{"+
+"0%{transform:scale(0.5);}"+
+"50%{transform:scale(2.5);}"+
+"100%{transform:scale(1.3);}"+
+"}"+
+".zoomMsg{"+
+"animation:zoomEffect 1.5s ease-in-out;"+
+"}"+
+"</style>"+
+
+"<div class='zoomMsg' style='text-align:center;margin-top:200px;font-family:Arial;'>"+
+"<h2>Bayapaddava 😄</h2>"+
+"<p>Don't worry!<br>You should get 9 – 9.5 CGPA<br></br>Results ki inka time vundi le</p>"+
+"</div>"+
+
+"<div style='position:fixed; bottom:10px; right:15px; font-family:Arial; font-size:14px; color:gray;'>"+
+"By Sai Reddy"+
+"</div>";
+
+}
+
+</script>
+
+</body>
+</html>
